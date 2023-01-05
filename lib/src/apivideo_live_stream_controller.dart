@@ -115,7 +115,7 @@ class ApiVideoLiveStreamController {
   /// Starts the live stream to the specified "[url]/[streamKey]".
   Future<void> startStreaming(
       {required String streamKey,
-      String url = "rtmp://broadcast.api.video/s/"}) async {
+      String url = "rtmps://rtmp-api.facebook.com/rtmp/"}) async {
     return _platform.startStreaming(streamKey: streamKey, url: url);
   }
 
